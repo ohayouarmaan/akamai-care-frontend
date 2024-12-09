@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,8 +20,10 @@ export default function Home() {
           <span className="inline-block animate-fadeIn delay-[500ms]">e</span>
         </div>
         <div className="flex gap-4">
-          <Button className="w-full font-bold animate-fadeIn">Dashboard</Button>
-          <Button className="w-full font-bold animate-fadeIn">Chatbot</Button>
+          <Link href={"/dashboard"}><Button className="w-full font-bold animate-fadeIn">Dashboard</Button></Link>
+          <Link href={"/chatbot"}>
+            <Button className="w-full font-bold animate-fadeIn">Chatbot</Button>
+          </Link>
         </div>
       </div>
     </div>
