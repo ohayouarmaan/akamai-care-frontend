@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
 import Link from "next/link";
 import { useState, useRef } from "react";
-import { text } from "stream/consumers";
 
 enum typeOfMessage {
   bot,
@@ -15,7 +14,7 @@ type messageType = {
   content: string;
 };
 
-export default function () {
+export default function Chatbot () {
   const [ messagesState, setMessageState ] = useState<messageType[]>([
   ]);
   const textRef = useRef<HTMLTextAreaElement>(null);
@@ -80,13 +79,13 @@ export default function () {
 
             }
         }} ref={textRef} placeholder="Type your message here." className="w-[60vw] bottom-10"/>
-        <Button onClick={async (e) => {
+        <Button onClick={async (_e) => {
           const currentText = textRef.current?.value || ""
           setMessageState(msg => [...msg, {
             _type: typeOfMessage.user,
             content: currentText
           }]);
-          const url = `http://localhost:8000/chatbot`;
+          const url = `https://oreonmayo-akamaicare.hf.space/chatbot`;
             const data = { query: currentText };
           fetch(url, {
             method: "POST",

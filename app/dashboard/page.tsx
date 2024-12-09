@@ -1,20 +1,16 @@
 import { Metadata } from "next"
-import Image from "next/image"
 import { Component } from "./card"
 import { PieComponent } from "./pie_chart";
 
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 import {
   Tabs,
   TabsContent,
-  TabsList,
-  TabsTrigger,
 } from "@/components/ui/tabs"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
