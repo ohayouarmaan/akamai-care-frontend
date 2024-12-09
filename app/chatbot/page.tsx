@@ -48,7 +48,7 @@ export default function () {
             _type: typeOfMessage.user,
             content: currentText
           }]);
-          const url = `http://localhost:8000/chatbot`;
+          const url = `https://oreonmayo-akamaicare.hf.space/chatbot`;
             const data = { query: currentText };
           fetch(url, {
             method: "POST",
