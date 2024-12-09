@@ -1,0 +1,9 @@
+[{
+  "type": "PRACTITIONER",
+  "count": 6391,
+  "fill": "var(--color-chrome)"
+}, {
+"type": "ORGANIZATION",
+  "count": 801,
+  "fill": "var(--color-firefox)"
+}]
