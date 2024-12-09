@@ -9,10 +9,11 @@ export default function Home() {
       <div>
         <div className="flex space-x-[0.4] text-3xl font-bold uppercase pb-2">
           <span className="inline-block animate-fadeIn delay-[0ms]">A</span>
-          <span className="inline-block animate-fadeIn delay-[200ms]">l</span>
-          <span className="inline-block animate-fadeIn delay-[300ms]">o</span>
-          <span className="inline-block animate-fadeIn delay-[400ms]">h</span>
+          <span className="inline-block animate-fadeIn delay-[200ms]">k</span>
+          <span className="inline-block animate-fadeIn delay-[300ms]">a</span>
+          <span className="inline-block animate-fadeIn delay-[400ms]">m</span>
           <span className="inline-block animate-fadeIn delay-[400ms]">a</span>
+          <span className="inline-block animate-fadeIn delay-[400ms]">i</span>
           <span className="inline-block animate-fadeIn delay-[500ms]">&nbsp; </span>
           <span className="inline-block animate-fadeIn delay-[500ms]">c</span>
           <span className="inline-block animate-fadeIn delay-[500ms]">a</span>
