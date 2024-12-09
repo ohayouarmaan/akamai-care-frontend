@@ -79,7 +79,7 @@ export default function Chatbot () {
 
             }
         }} ref={textRef} placeholder="Type your message here." className="w-[60vw] bottom-10"/>
-        <Button onClick={async (_e) => {
+        <Button onClick={async () => {
           const currentText = textRef.current?.value || ""
           setMessageState(msg => [...msg, {
             _type: typeOfMessage.user,
